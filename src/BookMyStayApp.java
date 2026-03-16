@@ -1,33 +1,35 @@
-/**
 
- * Book My Stay Application
- *
- * This class represents the entry point of the Hotel Booking Management System.
- * It demonstrates how a Java program starts execution and displays a welcome
- * message to the user.
- *
- * @author Mohith
- * @version 1.0
- */
 
 public class BookMyStayApp {
 
-```
-    /**
-     * Main method - Entry point of the application.
-     * JVM starts execution from this method.
-     */
-    public static void main(String[] args) {
 
-        // Display welcome message
-        System.out.println("=================================");
-        System.out.println("     Welcome to Book My Stay     ");
-        System.out.println("   Hotel Booking System v1.0     ");
-        System.out.println("=================================");
 
-        // Inform user that application started successfully
-        System.out.println("Application started successfully.");
+        public static void main(String[] args) {
+
+            System.out.println("===== Book My Stay - Hotel Booking System v2.1 =====");
+
+            Room single = new SingleRoom();
+            Room doubleRoom = new DoubleRoom();
+            Room suite = new SuiteRoom();
+
+            int singleAvailability = 10;
+            int doubleAvailability = 5;
+            int suiteAvailability = 2;
+
+            System.out.println("\n--- Single Room ---");
+            single.displayRoomDetails();
+            System.out.println("Available Rooms: " + singleAvailability);
+
+            System.out.println("\n--- Double Room ---");
+            doubleRoom.displayRoomDetails();
+            System.out.println("Available Rooms: " + doubleAvailability);
+
+            System.out.println("\n--- Suite Room ---");
+            suite.displayRoomDetails();
+            System.out.println("Available Rooms: " + suiteAvailability);
+        }
     }
-```
+
+
 
 }
